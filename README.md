@@ -1,6 +1,6 @@
 # Breakable Glass Custom for Godot 4
 
-![Icon](icon.svg)
+
 
 A procedural glass fracture system for Godot 4.x. This addon extends `CSGPolygon3D` to allow you to draw window shapes of any complexity and shatter them dynamically at runtime using a realistic radial fracture pattern.
 
