@@ -2,7 +2,7 @@
 
 
 
-A procedural glass fracture system for Godot 4.x. This addon extends `CSGPolygon3D` to allow you to draw window shapes of any complexity and shatter them dynamically at runtime using a realistic radial fracture pattern.
+A procedural glass fracture system for Godot 4.x (4.3 and lower require you to change @export_tool_button to boolian with a setter). This addon extends `CSGPolygon3D` to allow you to draw window shapes of any complexity and shatter them dynamically at runtime using a realistic radial fracture pattern.
 
 Made with AI. Probably even works) (Tested(kind of))
 
@@ -76,3 +76,11 @@ func _on_body_entered(body):
  - Fix: This is purely a visual glitch in the Godot Editor. It does not affect the game. To clear it, simply Reload the Scene (Project -> Reload Saved Scene).
 
  - Material: If no material is assigned, a default transparent blue glass material is applied automatically.
+
+ - Godot 4.3 and lower require you to change @export_tool_button to boolian with a setter.
+```gdscript
+# example
+@export var button: bool = false:
+   set(value):
+      run_function()
+```
